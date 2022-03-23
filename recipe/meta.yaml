@@ -1,5 +1,5 @@
 {% set name = "optuna-dashboard" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.1" %}
 
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optuna-dashboard-{{ version }}.tar.gz
-  sha256: be6f46449ede373e4147d185c1376d2e6f0df7ece037ff6685d86245850b3882
+  sha256: 3d578712aa44759e07a8eba69674bbba69c807f23b79d9ce60d3abfa06b49be4
 
 build:
   number: 0
   noarch: python
   entry_points:
-    - optuna-dashboard = optuna_dashboard.cli:main
+    - optuna-dashboard = optuna_dashboard._cli:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
