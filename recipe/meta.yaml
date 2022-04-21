@@ -1,5 +1,5 @@
 {% set name = "optuna-dashboard" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optuna-dashboard-{{ version }}.tar.gz
-  sha256: 33bfffeccdd6937c35467a9ee3e1c8f5354015b77e0a6df117b8466a146a05a9
+  sha256: 8bb23d60ccae80126c7e62747e1f795b140a04ec93553e155aa762e02edb0824
 
 build:
   number: 0
