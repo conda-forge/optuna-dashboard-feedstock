@@ -20,12 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - bottle
     - optuna >=2.7
     - packaging
-    - python >=3.6
+    - python >=3.7
     - typing-extensions
     - scikit-learn
 
