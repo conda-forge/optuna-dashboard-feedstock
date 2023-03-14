@@ -1,5 +1,5 @@
 {% set name = "optuna-dashboard" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optuna-dashboard-{{ version }}.tar.gz
-  sha256: cb7aff838e67e183b902f0e70464496a4888e2dec7583ec6970aa24563462d5b
+  sha256: abdc3472d976d86dbb7cf18e98bab6b549cfd328a007e6c5fdb377ebe2359ab2
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - optuna >=2.7
     - packaging
     - python >=3.7
-    - typing-extensions
     - scikit-learn
 
 test:

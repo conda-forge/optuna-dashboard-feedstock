@@ -1,11 +1,11 @@
-About optuna-dashboard
-======================
+About optuna-dashboard-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/optuna-dashboard-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/optuna/optuna-dashboard
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/optuna-dashboard-feedstock/blob/main/LICENSE.txt)
 
 Summary: Real-time dashboard for Optuna.
 
