@@ -22,7 +22,7 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - bottle
+    - bottle >= 0.13.0
     - optuna >=2.7
     - packaging
     - python >=3.7
