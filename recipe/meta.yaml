@@ -23,7 +23,7 @@ requirements:
     - setuptools
     - python >=3.7
   run:
-    - bottle >= 0.13.0
+    - bottle >=0.13.0
     - optuna >=2.7
     - packaging
     - python >=3.7
