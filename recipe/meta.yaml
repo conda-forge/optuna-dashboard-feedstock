@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 59866b7c5322153cdf777cba701e5ca1d1142f1cff9974976d2295c4c01d79dc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - optuna-dashboard = optuna_dashboard._cli:main
@@ -21,12 +21,12 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - bottle >=0.13.0
     - optuna >=2.7
     - packaging
-    - python >=3.7
+    - python >={{ python_min }}
     - scikit-learn
 
 test:
@@ -37,6 +37,7 @@ test:
     - optuna-dashboard --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/optuna/optuna-dashboard
