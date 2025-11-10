@@ -24,10 +24,8 @@ requirements:
     - python {{ python_min }}
   run:
     - bottle >=0.13.0
-    - optuna >=2.7
-    - packaging
+    - optuna >=3.6.0
     - python >={{ python_min }}
-    - scikit-learn
 
 test:
   imports:
